@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pokemon catcher</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <div class="content">
+                <h1 id="success">POKEMON CAUGHT!</h1>
+                <button id="search-btn">Search for Pokemon!</button>
+                <div class="pokeballs">
+                    <img id="pokeball" src="assets/pokeball.png" alt="pokeball">
+                    <img id="pokeball" src="assets/pokeball.png" alt="pokeball">
+                    <img id="pokeball" src="assets/pokeball.png" alt="pokeball">
+                    <img id="pokeball" src="assets/pokeball.png" alt="pokeball">
+                    <img id="pokeball" src="assets/pokeball.png" alt="pokeball">
+                </div>
+
+                <div id="wait">
+                    <img src='https://38.media.tumblr.com/9656b9837470ff5cce3bd2ecf7d43cbc/tumblr_mw9lr1FUNx1scncwdo1_500.gif' width=30% height=30%/>
+                </div>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <button id="catch-btn">Catch!</button>
+                        <button id="release-btn">Let go!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
